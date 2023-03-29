@@ -1,0 +1,149 @@
+.benefits {
+  padding-top: 83px;
+  padding-bottom: 90px;
+
+  @include laptop {
+    padding-top: 55px;
+  }
+
+  @include tablet {
+    padding-top: 40px;
+    padding-bottom: 80px;
+  }
+
+  @include phone {
+    padding-top: 30px;
+    padding-bottom: 60px;
+  }
+
+  &__title {
+    margin-bottom: 50px;
+
+    @include laptop {
+      margin-bottom: 54px;
+    }
+
+    @include tablet {
+      margin-bottom: 44px;
+      max-width: 380px;
+    }
+
+    @include phone {
+      margin-bottom: 28px;
+      max-width: 240px;
+    }
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 41px;
+    gap: 93px;
+
+    @include laptop {
+      padding-left: 45px;
+      gap: 56px;
+    }
+
+    @include tablet {
+      flex-wrap: wrap;
+      padding-left: 40px;
+      gap: 42px 108px;
+    }
+
+    @include phone {
+      gap: 31px;
+    }
+  }
+
+  &__item {
+    position: relative;
+    padding-bottom: 18px;
+    max-width: 216px;
+    background-image: $gradient;
+    background-repeat: no-repeat;
+    background-size: auto 4px;
+    background-position: bottom;
+
+    @include laptop {
+      max-width: 188px;
+    }
+
+    @include tablet {
+      padding-bottom: 21px;
+      max-width: 216px;
+    }
+
+    @include phone {
+      padding-bottom: 9px;
+      background-size: auto 2px;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: -36px;
+      background-repeat: no-repeat;
+      background-size: auto 100%;
+      background-position: center;
+    }
+
+    &_statistics::before {
+      top: 6px;
+      width: 24px;
+      height: 24px;
+      background-image: url("../img/sprite.svg#statistics");
+
+      @include phone {
+        top: 0;
+        width: 28px;
+      }
+    }
+
+    &_security::before {
+      top: 2px;
+      width: 24px;
+      height: 31.5px;
+      background-image: url("../img/sprite.svg#security");
+
+      @include phone {
+        top: -6px;
+        width: 26px;
+      }
+    }
+
+    &_change::before {
+      width: 30px;
+      height: 33px;
+      background-image: url("../img/sprite.svg#change");
+
+      @include phone {
+        top: -10px;
+      }
+    }
+
+    &_comfort::before {
+      top: 3px;
+      width: 30px;
+      height: 30px;
+      background-image: url("../img/sprite.svg#comfort");
+
+      @include phone {
+        top: -8px;
+      }
+    }
+  }
+
+  &__subtitle {
+    margin-bottom: 10px;
+
+    @include laptop {
+      margin-bottom: 13.5px;
+    }
+
+    @include phone {
+      margin-bottom: 8px;
+    }
+  }
+}

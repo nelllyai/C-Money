@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gulp</title>
+  <!-- <link rel="stylesheet" href="css/index.min.css"> -->
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const createLink = url => {
+        const link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.href = url;
+        document.head.append(link);
+      };
+      createLink('css/index.min.css');
+    })
+  </script>
+  <script defer src="https://api-maps.yandex.ru/2.1/?apikey=90f168b9-9002-4a75-ad9b-fadd23f1e34b&lang=ru_RU" type="text/javascript"></script>
+  <script type="module" src="js/index.min.js"></script>
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__container container">
+      <a href="/" class="header__logo">
+        <img src="img/sprite.svg#logo" alt="Логотип компании C-Money" width="139" height="38" class="header__svg">
+      </a>
+
+      <button class="header__menu-button"></button>
+
+      <nav class="header__navigation">
+        <ul class="header__list">
+          <li class="header__item">
+            <a href="#benefits" class="header__link">Почему с нами выгодно?</a>
+          </li>
+          <li class="header__item">
+            <a href="#registration" class="header__link">Регистрация</a>
+          </li>
+          <li class="header__item">
+            <a href="#feedback" class="header__link">Отзывы</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main">
+    <section id="banner" class="banner">
+      <div class="banner__container container">
+        <h1 class="banner__title">Платформа C-Money</h1>
+        <p class="banner__description">
+          Удобная платформа для хранения счётов, перевода валюты и покупки криптовалюты
+        </p>
+        <a href="#registration" class="banner__button button">Зарегистрироваться</a>
+      </div>
+    </section>
+
+    <section id="benefits" class="benefits">
+      <div class="container">
+        <h2 class="benefits__title">Почему с нами выгодно?</h2>
+        <ul class="benefits__list">
+          <li class="benefits__item benefits__item_statistics">
+            <h3 class="benefits__subtitle">Статистика</h3>
+            <p class="benefits__description">
+              можно быстро отследить статистику доходов и расходов
+            </p>
+          </li>
+          <li class="benefits__item benefits__item_security">
+            <h3 class="benefits__subtitle">Надёжность</h3>
+            <p class="benefits__description">
+              с нами ваши счета в безопасности
+            </p>
+          </li>
+          <li class="benefits__item benefits__item_change">
+            <h3 class="benefits__subtitle">Обмен валюты</h3>
+            <p class="benefits__description">
+              обмен валюты по самому выгодному курсу
+            </p>
+          </li>
+          <li class="benefits__item benefits__item_comfort">
+            <h3 class="benefits__subtitle">Удобство</h3>
+            <p class="benefits__description">
+              удобная платформа для отслежки счётов
+            </p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="registration" class="registration">
+      <div class="container">
+        <h2 class="registration__title">Как зарегистрироваться на платформе</h2>
+        <p class="registration__description">Пошагово заполните все поля формы</p>
+
+        <div class="registration__button-group">
+          <button class="registration__button">1</button>
+          <button class="registration__button">2</button>
+          <button class="registration__button">3</button>
+        </div>
+
+        <form action="javascript:void(0)" class="registration__form">
+          <fieldset class="registration__fieldset registration__fieldset_active" data-tab="1">
+            <label class="registration__label">
+              <span class="registration__field-title">Имя</span>
+              <input type="text" name="first-name" class="registration__input">
+            </label>
+
+            <label class="registration__label">
+              <span class="registration__field-title">Фамилия</span>
+              <input type="text" name="last-name" class="registration__input">
+            </label>
+
+            <label class="registration__label">
+              <span class="registration__field-title">Отчество</span>
+              <input type="text" name="middle-name" class="registration__input">
+            </label>
+
+            <button type="button" class="registration__next-button button" disabled>Далее</button>
+          </fieldset>
+
+          <fieldset class="registration__fieldset" data-tab="2">
+            <label class="registration__label">
+              <span class="registration__field-title">Телефон</span>
+              <input type="tel" name="phone-number" class="registration__input">
+            </label>
+
+            <label class="registration__label">
+              <span class="registration__field-title">Электронная почта</span>
+              <input type="email" name="email" class="registration__input">
+            </label>
+
+            <button type="button" class="registration__next-button registration__next-button_no-margin button" disabled>Далее</button>
+          </fieldset>
+
+          <fieldset class="registration__fieldset" data-tab="3">
+            <label class="registration__label">
+              <span class="registration__field-title">Придумайте логин</span>
+              <input type="text" name="login" class="registration__input">
+            </label>
+
+            <label class="registration__label">
+              <span class="registration__field-title">Придумайте пароль</span>
+              <input type="password" name="password" class="registration__input">
+            </label>
+
+            <label class="registration__label">
+              <span class="registration__field-title">Повторите пароль</span>
+              <input type="password" name="repeat-password" class="registration__input">
+            </label>
+
+            <button type="submit" class="registration__submit-button button" disabled>Зарегистрироваться</button>
+          </fieldset>
+        </form>
+      </div>
+    </section>
+
+    <section id="feedback" class="feedback">
+      <div class="container">
+        <h2 class="feedback__title">Отзывы наших клиентов</h2>
+
+        <div class="feedback__swiper">
+          <div class="swiper-button-prev"></div>
+          <div class="swiper swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="img/people/client1.png" alt="Юлия С." class="feedback__image">
+                <p class="feedback__name">Юлия С</p>
+                <p class="feedback__comment">
+                  «Очень удобная платформа для открытия мультивалютных счётов»
+                </p>
+              </div>
+
+              <div class="swiper-slide">
+                <img src="img/people/client2.png" alt="Светлана Н" class="feedback__image">
+                <p class="feedback__name">Светлана Н</p>
+                <p class="feedback__comment">
+                  «Пользуюсь платформой уже больше года, нравится, что можно быстро менять валюту по выгодному курсу»
+                </p>
+              </div>
+
+              <div class="swiper-slide">
+                <img src="img/people/client3.png" alt="Сергей А." class="feedback__image">
+                <p class="feedback__name">Сергей А</p>
+                <p class="feedback__comment">
+                  «Открыл счёт в биткоинах, могу быстро следить за курсом и делать обмен»
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__wrapper">
+        <a href="/" class="footer__logo">
+          <img src="img/sprite.svg#logo-white" alt="Логотип компании C-Money" width="141" height="38" class="footer__svg">
+        </a>
+
+        <nav class="footer__navigation">
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a href="#banner" class="footer__link">О компании</a>
+            </li>
+            <li class="footer__item">
+              <a href="#feedback" class="footer__link">Отзывы</a>
+            </li>
+            <li class="footer__item">
+              <a href="#registration" class="footer__link">Регистрация</a>
+            </li>
+            <li class="footer__item">
+              <a href="#benefits" class="footer__link">Почему с нами выгодно?</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="footer__contacts">
+          <p class="footer__contacts-title">Контакты:</p>
+
+          <address class="footer__address">
+            <a href="tel:+79213474997" class="footer__tel">+7 921 347-49-97</a>
+            <a href="mailto:C-Money@gmail.com" class="footer__mail">C-Money@gmail.com</a>
+            <p class="footer__location">
+              г. Москва ул.&nbsp;Новослободская 120/2 54
+            </p>
+
+            <ul class="footer__media">
+              <li class="footer__social">
+                <a href="javascript:void(0)" class="footer__icon-link">
+                  <svg width="46" height="46" viewBox="0 0 46 46" fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="23" cy="23" r="23" fill="white" />
+                    <path
+                      d="M31.665 14.7169L13.935 21.5539C12.725 22.0399 12.732 22.7149 13.713 23.0159L18.265 24.4359L28.797 17.7909C29.295 17.4879 29.75 17.6509 29.376 17.9829L20.843 25.6839H20.841L20.843 25.6849L20.529 30.3769C20.989 30.3769 21.192 30.1659 21.45 29.9169L23.661 27.7669L28.26 31.1639C29.108 31.6309 29.717 31.3909 29.928 30.3789L32.947 16.1509C33.256 14.9119 32.474 14.3509 31.665 14.7169Z" />
+                  </svg>
+                </a>
+              </li>
+
+              <li class="footer__social">
+                <a href="javascript:void(0)" class="footer__icon-link">
+                  <svg width="46" height="46" viewBox="0 0 46 46" fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="23" cy="23" r="23" fill="white" />
+                    <path
+                      d="M34.643 15.937C33.808 16.307 32.911 16.557 31.968 16.67C32.941 16.0877 33.669 15.1714 34.016 14.092C33.1019 14.6349 32.1014 15.0172 31.058 15.222C30.3564 14.4728 29.4271 13.9763 28.4143 13.8094C27.4016 13.6426 26.3621 13.8147 25.4572 14.2992C24.5524 14.7837 23.8328 15.5533 23.4102 16.4887C22.9875 17.424 22.8855 18.4727 23.12 19.472C21.2677 19.379 19.4556 18.8975 17.8014 18.0589C16.1472 17.2202 14.6879 16.0431 13.518 14.604C13.118 15.294 12.888 16.094 12.888 16.946C12.8876 17.713 13.0764 18.4682 13.4379 19.1447C13.7993 19.8212 14.3222 20.398 14.96 20.824C14.2203 20.8004 13.4969 20.6005 12.85 20.241V20.301C12.8499 21.3767 13.222 22.4193 13.9032 23.252C14.5843 24.0846 15.5326 24.6559 16.587 24.869C15.9008 25.0547 15.1813 25.082 14.483 24.949C14.7805 25.8746 15.36 26.684 16.1404 27.2639C16.9208 27.8438 17.8629 28.1651 18.835 28.183C17.1848 29.4784 15.1469 30.181 13.049 30.178C12.6774 30.1781 12.3061 30.1564 11.937 30.113C14.0665 31.4821 16.5454 32.2088 19.077 32.206C27.647 32.206 32.332 25.108 32.332 18.952C32.332 18.752 32.327 18.55 32.318 18.35C33.2293 17.6909 34.0159 16.8749 34.641 15.94L34.643 15.937Z" />
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </address>
+        </div>
+
+        <div id="map" class="footer__map"></div>
+      </div>
+
+      <p class="footer__copyright">
+        © C-Money, 2022
+      </p>
+    </div>
+  </footer>
+</body>
+
+</html>

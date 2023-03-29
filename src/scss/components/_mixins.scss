@@ -1,0 +1,27 @@
+@mixin font($name, $weight) {
+  font: {
+    family: $name;
+    weight: $weight;
+    display: swap;
+  }
+
+  src: url("../fonts/#{$name}-#{$weight}.ttf") format("truetype");
+}
+
+@mixin laptop {
+  @media (max-width: 1439px) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (max-width: 1023px) {
+    @content;
+  }
+}
+
+@mixin phone {
+  @media (max-width: 767px) {
+    @content;
+  }
+}

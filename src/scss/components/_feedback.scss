@@ -1,0 +1,58 @@
+.feedback {
+  padding: 90px 0;
+
+  @include laptop {
+    padding-bottom: 65px;
+  }
+
+  @include tablet {
+    padding-top: 80px;
+    padding-bottom: 45px;
+  }
+
+  @include phone {
+    padding-top: 60px;
+    padding-bottom: 70px;
+  }
+
+  &__title {
+    margin-bottom: 12px;
+
+    @include tablet {
+      max-width: 380px;
+    }
+
+    @include phone {
+      margin-bottom: 20px;
+      max-width: 210px;
+    }
+  }
+
+  &__swiper {
+    position: relative;
+    padding: 0 110px;
+
+    @include laptop {
+      padding: 0 60px;
+    }
+
+    @include tablet {
+      padding: 0;
+    }
+
+    @include phone {
+      padding: 0 49px;
+    }
+  }
+
+  &__image {
+    margin: 0 auto;
+    height: 140px;
+    width: 140px;
+
+    @include tablet {
+      width: 80px;
+      height: 80px;
+    }
+  }
+}
