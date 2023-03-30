@@ -11,23 +11,26 @@ menuButton.addEventListener('click', () => {
 });
 ;// CONCATENATED MODULE: ./src/js/modules/form.js
 const form_form = document.querySelector('form');
+const buttonGroup = document.querySelector('.registration__button-group');
+const successBlock = document.querySelector('.registration__success');
+const getButtonByIndex = index => buttonGroup.querySelector(`[data-page='${index}']`);
 const getCurrentFieldset = () => form_form.querySelector('.registration__fieldset_active');
+const getCurrentIndex = () => +getCurrentFieldset().dataset.tab;
 const getCurrentInputFields = () => getCurrentFieldset().querySelectorAll('input');
 const getCurrentButton = () => getCurrentFieldset().querySelector('button');
 const getNextFieldset = () => {
   const currentTab = +getCurrentFieldset().dataset.tab;
-  console.log(getCurrentFieldset());
   return form_form.querySelector(`[data-tab='${currentTab + 1}']`);
 };
+const getFieldsetByIndex = index => form_form.querySelector(`[data-tab='${index}']`);
 form_form.addEventListener('input', () => {
   let toTurnOnButton = true;
   for (const input of getCurrentInputFields()) {
     if (!input.value) toTurnOnButton = false;
   }
-  if (toTurnOnButton) {
-    getCurrentButton().disabled = false;
-  } else {
-    getCurrentButton().disabled = true;
+  getCurrentButton().disabled = !toTurnOnButton;
+  if (getCurrentIndex() < 3) {
+    getButtonByIndex(getCurrentIndex() + 1).disabled = !toTurnOnButton;
   }
 });
 form_form.addEventListener('click', event => {
@@ -38,6 +41,16 @@ form_form.addEventListener('click', event => {
 });
 form_form.addEventListener('submit', event => {
   event.preventDefault();
+  buttonGroup.remove();
+  successBlock.classList.add('registration__success_active');
+  getCurrentFieldset().classList.remove('registration__fieldset_active');
+});
+buttonGroup.addEventListener('click', event => {
+  const target = event.target;
+  if (target.closest('button')) {
+    getCurrentFieldset().classList.remove('registration__fieldset_active');
+    getFieldsetByIndex(+target.dataset.page).classList.add('registration__fieldset_active');
+  }
 });
 ;// CONCATENATED MODULE: ./src/js/modules/swiper-bundle.min.js
 /**
@@ -4835,13 +4848,13 @@ const setPlacemark = map => {
   if (windowWidth >= 728) {
     myPlacemark = new ymaps.Placemark(coordinates, {}, {
       iconLayout: 'default#image',
-      iconImageHref: '/img/sprite.svg#location-mark',
+      iconImageHref: '/img/location-mark.svg',
       iconImageSize: [52, 52]
     });
   } else {
     myPlacemark = new ymaps.Placemark(coordinates, {}, {
       iconLayout: 'default#image',
-      iconImageHref: '/img/sprite.svg#location-mark',
+      iconImageHref: '/img/location-mark.svg',
       iconImageSize: [42, 42]
     });
   }

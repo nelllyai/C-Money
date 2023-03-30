@@ -1597,6 +1597,12 @@ button.swiper-pagination-bullet {
   color: #6E479E;
 }
 
+.registration__button:disabled {
+  color: #C6B6D7;
+  border-color: #C6B6D7;
+  pointer-events: none;
+}
+
 .registration__fieldset {
   display: none;
   -webkit-box-pack: justify;
@@ -1605,7 +1611,6 @@ button.swiper-pagination-bullet {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   row-gap: 40px;
-  opacity: 0;
 }
 
 .registration__fieldset_active {
@@ -1667,6 +1672,37 @@ button.swiper-pagination-bullet {
 .registration__submit-button {
   padding: 22px 102px;
   margin-left: auto;
+}
+
+.registration__success {
+  display: none;
+  padding-top: 127px;
+  padding-bottom: 50px;
+  background-color: #FFFFFF;
+  background-image: url("../img/sprite.svg#check");
+  background-repeat: no-repeat;
+  background-size: 54px;
+  background-position: top 50px center;
+}
+
+.registration__success_active {
+  display: block;
+}
+
+.registration__success-title {
+  margin: 0 auto;
+  margin-bottom: 23px;
+  max-width: 600px;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 120%;
+  text-align: center;
+}
+
+.registration__notification {
+  margin: 0 auto;
+  max-width: 600px;
+  text-align: center;
 }
 
 .feedback {
@@ -1992,7 +2028,7 @@ button.swiper-pagination-bullet {
 @media (max-width: 1023px) {
   body {
     background-image: url("../img/sprite.svg#background-tablet");
-    background-size: 813px 748px;
+    background-size: 813px 743px;
     background-position: top -103px right -140px;
   }
 
@@ -2032,7 +2068,7 @@ button.swiper-pagination-bullet {
 
   .header__navigation {
     position: absolute;
-    top: -280px;
+    top: -300px;
     left: 0;
     right: 0;
     background-color: #FFFFFF;
@@ -2147,6 +2183,14 @@ button.swiper-pagination-bullet {
     flex-basis: 100%;
   }
 
+  .registration__success-title {
+    max-width: none;
+  }
+
+  .registration__notification {
+    max-width: none;
+  }
+
   .feedback {
     padding-top: 80px;
     padding-bottom: 45px;
@@ -2214,7 +2258,7 @@ button.swiper-pagination-bullet {
 @media (max-width: 767px) {
   body {
     background-image: url("../img/sprite.svg#background-phone");
-    background-size: 584px 748px;
+    background-size: 584px 743px;
     background-position: top -180px right -183px;
     font-size: 14px;
     line-height: 18.2px;
@@ -2233,7 +2277,7 @@ button.swiper-pagination-bullet {
 
   .container {
     padding: 0 15px;
-    max-width: 320px;
+    max-width: none;
   }
 
   .button {
@@ -2339,8 +2383,8 @@ button.swiper-pagination-bullet {
   }
 
   .registration__label {
-    -ms-flex-preferred-size: 280px;
-    flex-basis: 280px;
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
   }
 
   .registration__label:last-of-type {
@@ -2358,16 +2402,27 @@ button.swiper-pagination-bullet {
 
   .registration__next-button {
     padding: 14px 112px;
-    -ms-flex-preferred-size: 280px;
-    flex-basis: 280px;
     margin: 0;
   }
 
   .registration__submit-button {
     padding: 14px 63px;
-    -ms-flex-preferred-size: 280px;
-    flex-basis: 280px;
     margin: 0;
+  }
+
+  .registration__success {
+    position: relative;
+    left: -15px;
+    padding: 15px;
+    padding-top: 150px;
+    padding-bottom: 86px;
+    width: 100vw;
+    background-position: top 66px center;
+  }
+
+  .registration__success-title {
+    margin-bottom: 30px;
+    font-size: 17px;
   }
 
   .feedback {
