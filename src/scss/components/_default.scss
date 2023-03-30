@@ -31,13 +31,13 @@ body {
 
   @include tablet {
     background-image: url("../img/sprite.svg#background-tablet");
-    background-size: 813px 748px;
+    background-size: 813px 743px;
     background-position: top -103px right -140px;
   }
 
   @include phone {
     background-image: url("../img/sprite.svg#background-phone");
-    background-size: 584px 748px;
+    background-size: 584px 743px;
     background-position: top -180px right -183px;
     font-size: 14px;
     line-height: 18.2px;

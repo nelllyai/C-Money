@@ -30,7 +30,7 @@
         <img src="img/sprite.svg#logo" alt="Логотип компании C-Money" width="139" height="38" class="header__svg">
       </a>
 
-      <button class="header__menu-button">test</button>
+      <button class="header__menu-button"></button>
 
       <nav class="header__navigation">
         <ul class="header__list">
@@ -97,9 +97,9 @@
         <p class="registration__description">Пошагово заполните все поля формы</p>
 
         <div class="registration__button-group">
-          <button class="registration__button">1</button>
-          <button class="registration__button">2</button>
-          <button class="registration__button">3</button>
+          <button class="registration__button" data-page="1">1</button>
+          <button class="registration__button" data-page="2" disabled>2</button>
+          <button class="registration__button" data-page="3" disabled>3</button>
         </div>
 
         <form action="javascript:void(0)" class="registration__form">
@@ -155,6 +155,13 @@
             <button type="submit" class="registration__submit-button button" disabled>Зарегистрироваться</button>
           </fieldset>
         </form>
+
+        <div class="registration__success">
+          <div class="registration__success-title">Вы успешно зарегистрировались на платформе C-Money!</div>
+          <p class="registration__notification">
+            Ссылка для входа в личный кабинет отправлена на вашу электронную почту (не забудьте проверить папку «Спам»)
+          </p>
+        </div>
       </div>
     </section>
 
