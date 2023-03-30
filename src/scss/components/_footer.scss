@@ -27,7 +27,7 @@
 
     @include tablet {
       flex-wrap: wrap;
-      margin-bottom: 50px;
+      margin-bottom: 65px;
       gap: 15px 20px;
     }
 
@@ -72,6 +72,10 @@
 
   &__navigation {
     flex-shrink: 0;
+
+    @include phone {
+      flex-basis: 100%;
+    }
   }
 
   &__list {
@@ -177,25 +181,27 @@
   }
 
   &__map {
-    // margin-right: -44px;
-    margin-left: -44px;
     width: 420px;
     height: 200px;
+    transform: scale(1.12, 1.05) translate(-20px, 5px);
 
     @include laptop {
-      margin: 0;
-      margin-right: -20px;
       width: 385px;
+      height: 200px;
+      transform: scale(1.02, 1.05) translate(-3px, 5px);
     }
 
     @include tablet {
       flex-basis: 100%;
-      padding-top: 15px;
+      padding-top: 20px;
       height: 260px;
+      transform: scaleY(1.05);
     }
 
     @include phone {
+      padding-top: 24px;
       height: 180px;
+      transform: scaleY(1.1);
     }
   }
 }
