@@ -1,4 +1,15 @@
-<!DOCTYPE html><html lang="ru"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Gulp</title><style>@font-face{font-family:Nunito;font-weight:400;font-display:swap;src:url(fonts/Nunito-400.ttf) format("truetype")}@font-face{font-family:Nunito;font-weight:600;font-display:swap;src:url(fonts/Nunito-600.ttf) format("truetype")}@font-face{font-family:Nunito;font-weight:700;font-display:swap;src:url(fonts/Nunito-700.ttf) format("truetype")}@font-face{font-family:Comfortaa;font-weight:700;font-display:swap;src:url(fonts/Comfortaa-700.ttf) format("truetype")}html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0}main{display:block}h1{font-size:2em;margin:.67em 0}a{background-color:transparent}img{border-style:none}button,input{font-family:inherit;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button{text-transform:none}[type=button],[type=submit],button{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:.35em .75em .625em}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}html{position:relative;-webkit-box-sizing:border-box;box-sizing:border-box;scroll-behavior:smooth}*,::after,::before{-webkit-box-sizing:inherit;box-sizing:inherit}body{background-color:#fff;min-width:320px;min-height:100vh;background-image:url(img/sprite.svg#background-element);background-repeat:no-repeat;background-size:916px 605px;background-position:top right;font-family:Nunito,sans-serif;font-weight:400;font-size:18px;line-height:23.4px;color:#210b36}img{max-width:100%;max-height:100%;height:auto}button{padding:0;border:none;background-color:transparent}a{text-decoration:none;color:inherit}ul{list-style:none;padding:0;margin:0}h1,h2,h3,p{margin:0}fieldset,input{padding:0;margin:0;border:none}input{outline:0}h1,h2{font-family:Comfortaa,sans-serif;font-weight:700;font-size:40px;line-height:45px}h3{font-weight:600;font-size:30px;line-height:36px}:root{--swiper-theme-color:#007aff}:root{--swiper-navigation-size:44px}.container{padding:0 130px;max-width:1440px;margin:0 auto}.button{position:relative;display:inline-block;z-index:3;border-radius:10px;background-image:linear-gradient(87.4deg,#2e00b1 -11.74%,#8100bd 48.81%,#a400be 113.27%);font-family:inherit;font-size:18px;line-height:24.55px;color:#fff;text-align:center}.button::after,.button::before{content:"";display:block;position:absolute;top:0;left:0;z-index:-1;width:100%;height:100%;border-radius:inherit;opacity:0}.button::before{background-image:linear-gradient(0deg,rgba(0,0,0,.1),rgba(0,0,0,.1)),linear-gradient(87.4deg,#2e00b1 -11.74%,#8100bd 48.81%,#a400be 113.27%)}.button::after{background-image:linear-gradient(0deg,rgba(255,255,255,.2),rgba(255,255,255,.2)),linear-gradient(87.4deg,#2e00b1 -11.74%,#8100bd 48.81%,#a400be 113.27%)}.button:disabled{background:#b0b0b0}.header{padding-top:20px}.header__container{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.header__logo{display:block}.header__svg{width:139px;height:38px;-o-object-fit:cover;object-fit:cover}.header__menu-button{display:none}.header__list{display:-webkit-box;display:-ms-flexbox;display:flex;gap:40px}.header__link{font-weight:700;font-size:15px;line-height:20px;color:#fff}.header__link::after{content:"";display:block;background-color:#fff;height:1px;width:0}.benefits{padding-top:83px;padding-bottom:90px}.benefits__title{margin-bottom:50px}.benefits__list{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;padding-left:41px;gap:93px}.benefits__item{position:relative;padding-bottom:18px;max-width:216px;background-image:linear-gradient(87.4deg,#2e00b1 -11.74%,#8100bd 48.81%,#a400be 113.27%);background-repeat:no-repeat;background-size:auto 4px;background-position:bottom}.benefits__item::before{content:"";position:absolute;top:0;left:-36px;background-repeat:no-repeat;background-size:auto 100%;background-position:center}.benefits__item_statistics::before{top:6px;width:24px;height:24px;background-image:url(img/sprite.svg#statistics)}.benefits__item_security::before{top:2px;width:24px;height:31.5px;background-image:url(img/sprite.svg#security)}.benefits__item_change::before{width:30px;height:33px;background-image:url(img/sprite.svg#change)}.benefits__item_comfort::before{top:3px;width:30px;height:30px;background-image:url(img/sprite.svg#comfort)}.benefits__subtitle{margin-bottom:10px}.banner{padding-top:235px;padding-bottom:83px;background-image:url(img/sprite.svg#phones);background-repeat:no-repeat;background-size:802px 497px;background-position:top 31px right 81px}.banner__title{margin-bottom:20px}.banner__description{margin-bottom:47px;max-width:380px}.banner__button{padding:23px 103px}.registration__fieldset{display:none;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-ms-flex-wrap:wrap;flex-wrap:wrap;row-gap:40px}.registration__label{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-ms-flex-preferred-size:380px;flex-basis:380px}.registration__field-title{display:inline-block;padding-left:20px;margin-bottom:2px;font-weight:700;font-size:15px;line-height:20px}.registration__input{padding:20px;width:100%;height:70px;border:2px solid #c6b6d7;border-radius:10px}.registration__next-button{padding:22px 163px;margin-left:auto}.registration__next-button_no-margin{margin-left:0;margin-top:auto}.registration__submit-button{padding:22px 102px;margin-left:auto}.registration__success{display:none;padding-top:127px;padding-bottom:50px;background-color:#fff;background-image:url(img/sprite.svg#check);background-repeat:no-repeat;background-size:54px;background-position:top 50px center}.registration__success-title{margin:0 auto;margin-bottom:23px;max-width:600px;font-weight:600;font-size:30px;line-height:120%;text-align:center}.registration__notification{margin:0 auto;max-width:600px;text-align:center}@media (max-width:1439px){body{background-size:795px 667px;background-position:top -151px right -34px}h3{font-size:24px;line-height:28.8px}.container{padding:0 22px;max-width:1024px}.benefits{padding-top:55px}.benefits__title{margin-bottom:54px}.benefits__list{padding-left:45px;gap:56px}.benefits__item{max-width:188px}.benefits__subtitle{margin-bottom:13.5px}.banner{padding-top:207px;padding-bottom:55px;background-size:614px 417px;background-position:top 44px right -59px}.registration__label{-ms-flex-preferred-size:315px;flex-basis:315px}.registration__next-button{padding:22px 130px}.registration__submit-button{padding:22px 70px}}@media (max-width:1023px){body{background-image:url(img/sprite.svg#background-tablet);background-size:813px 743px;background-position:top -103px right -140px}.container{padding:0 94px;max-width:768px}.header__logo{z-index:10}.header__menu-button{display:block;width:18px;height:12px;z-index:10;background-image:url("data:image/svg+xml,%3Csvg width='18' height='12' viewBox='0 0 18 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 12H18V10H0V12ZM0 7H18V5H0V7ZM0 0V2H18V0H0Z' fill='white'/%3E%3C/svg%3E%0A");background-repeat:no-repeat;background-size:contain;background-position:center}.header__navigation{position:absolute;top:-300px;left:0;right:0;background-color:#fff;-o-border-image:linear-gradient(87.4deg,#2e00b1 -11.74%,#8100bd 48.81%,#a400be 113.27%) 30;border-image:linear-gradient(87.4deg,#2e00b1 -11.74%,#8100bd 48.81%,#a400be 113.27%) 30;border-width:0 0 2px 0;border-style:solid}.header__list{-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;padding:94px 94px 36px;max-width:768px;margin:0 auto;gap:20px}.header__link{color:#210b36}.benefits{padding-top:40px;padding-bottom:80px}.benefits__title{margin-bottom:44px;max-width:380px}.benefits__list{-ms-flex-wrap:wrap;flex-wrap:wrap;padding-left:40px;gap:42px 108px}.benefits__item{padding-bottom:21px;max-width:216px}.banner{padding-top:476px;padding-bottom:40px;background-position:top 23px center}.banner__container{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.banner__title{text-align:center}.banner__description{text-align:center}.registration__fieldset{gap:10px}.registration__label{-ms-flex-preferred-size:100%;flex-basis:100%}.registration__label:last-of-type{margin-bottom:30px}.registration__next-button{-ms-flex-preferred-size:100%;flex-basis:100%}.registration__submit-button{-ms-flex-preferred-size:100%;flex-basis:100%}.registration__success-title{max-width:none}.registration__notification{max-width:none}}@media (max-width:767px){body{background-image:url(img/sprite.svg#background-phone);background-size:584px 743px;background-position:top -180px right -183px;font-size:14px;line-height:18.2px}h1,h2{font-size:19px;line-height:21.19px}h3{font-size:17px;line-height:20.4px}.container{padding:0 15px;max-width:none}.button{font-size:16px;line-height:21.82px}.header__list{padding:94px 15px 36px;max-width:320px}.benefits{padding-top:30px;padding-bottom:60px}.benefits__title{margin-bottom:28px;max-width:240px}.benefits__list{gap:31px}.benefits__item{padding-bottom:9px;background-size:auto 2px}.benefits__item_statistics::before{top:0;width:28px}.benefits__item_security::before{top:-6px;width:26px}.benefits__item_change::before{top:-10px}.benefits__item_comfort::before{top:-8px}.benefits__subtitle{margin-bottom:8px}.banner{padding-top:325px;padding-bottom:30px;background-size:400px 260px;background-position:top 25px center}.banner__title{margin-bottom:10px}.banner__description{margin-bottom:30px}.banner__button{padding:14px 64px;width:100%}.registration__fieldset{gap:15px}.registration__label{-ms-flex-preferred-size:100%;flex-basis:100%}.registration__label:last-of-type{margin-bottom:16px}.registration__field-title{font-size:12px;line-height:16px}.registration__input{height:50px}.registration__next-button{padding:14px 112px;margin:0}.registration__submit-button{padding:14px 63px;margin:0}.registration__success{position:relative;left:-15px;padding:15px;padding-top:150px;padding-bottom:86px;width:100vw;background-position:top 66px center}.registration__success-title{margin-bottom:30px;font-size:17px}}</style><script>document.addEventListener('DOMContentLoaded', () => {
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gulp</title>
+  <!-- <link rel="stylesheet" href="css/index.min.css"> -->
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
       const createLink = url => {
         const link = document.createElement('link');
         link.rel = 'stylesheet';
@@ -6,4 +17,261 @@
         document.head.append(link);
       };
       createLink('css/index.min.css');
-    })</script><script defer="defer" src="https://api-maps.yandex.ru/2.1/?apikey=90f168b9-9002-4a75-ad9b-fadd23f1e34b&amp;lang=ru_RU" type="text/javascript"></script><script type="module" src="js/index.min.js"></script></head><body><header class="header"><div class="header__container container"><a href="/" class="header__logo"><img src="img/sprite.svg#logo" alt="Логотип компании C-Money" width="139" height="38" class="header__svg"> </a><button class="header__menu-button"></button><nav class="header__navigation"><ul class="header__list"><li class="header__item"><a href="#benefits" class="header__link">Почему с нами выгодно?</a></li><li class="header__item"><a href="#registration" class="header__link">Регистрация</a></li><li class="header__item"><a href="#feedback" class="header__link">Отзывы</a></li></ul></nav></div></header><main class="main"><section id="banner" class="banner"><div class="banner__container container"><h1 class="banner__title">Платформа C-Money</h1><p class="banner__description">Удобная платформа для хранения счётов, перевода валюты и покупки криптовалюты</p><a href="#registration" class="banner__button button">Зарегистрироваться</a></div></section><section id="benefits" class="benefits"><div class="container"><h2 class="benefits__title">Почему с нами выгодно?</h2><ul class="benefits__list"><li class="benefits__item benefits__item_statistics"><h3 class="benefits__subtitle">Статистика</h3><p class="benefits__description">можно быстро отследить статистику доходов и расходов</p></li><li class="benefits__item benefits__item_security"><h3 class="benefits__subtitle">Надёжность</h3><p class="benefits__description">с нами ваши счета в безопасности</p></li><li class="benefits__item benefits__item_change"><h3 class="benefits__subtitle">Обмен валюты</h3><p class="benefits__description">обмен валюты по самому выгодному курсу</p></li><li class="benefits__item benefits__item_comfort"><h3 class="benefits__subtitle">Удобство</h3><p class="benefits__description">удобная платформа для отслежки счётов</p></li></ul></div></section><section id="registration" class="registration"><div class="container"><h2 class="registration__title">Как зарегистрироваться на платформе</h2><p class="registration__description">Пошагово заполните все поля формы</p><div class="registration__button-group"><button class="registration__button" data-page="1">1</button> <button class="registration__button" data-page="2" disabled="disabled">2</button> <button class="registration__button" data-page="3" disabled="disabled">3</button></div><form action="javascript:void(0)" class="registration__form"><fieldset class="registration__fieldset registration__fieldset_active" data-tab="1"><label class="registration__label"><span class="registration__field-title">Имя</span> <input type="text" name="first-name" class="registration__input"></label> <label class="registration__label"><span class="registration__field-title">Фамилия</span> <input type="text" name="last-name" class="registration__input"></label> <label class="registration__label"><span class="registration__field-title">Отчество</span> <input type="text" name="middle-name" class="registration__input"></label> <button type="button" class="registration__next-button button" disabled="disabled">Далее</button></fieldset><fieldset class="registration__fieldset" data-tab="2"><label class="registration__label"><span class="registration__field-title">Телефон</span> <input type="tel" name="phone-number" class="registration__input"></label> <label class="registration__label"><span class="registration__field-title">Электронная почта</span> <input type="email" name="email" class="registration__input"></label> <button type="button" class="registration__next-button registration__next-button_no-margin button" disabled="disabled">Далее</button></fieldset><fieldset class="registration__fieldset" data-tab="3"><label class="registration__label"><span class="registration__field-title">Придумайте логин</span> <input type="text" name="login" class="registration__input"></label> <label class="registration__label"><span class="registration__field-title">Придумайте пароль</span> <input type="password" name="password" class="registration__input"></label> <label class="registration__label"><span class="registration__field-title">Повторите пароль</span> <input type="password" name="repeat-password" class="registration__input"></label> <button type="submit" class="registration__submit-button button" disabled="disabled">Зарегистрироваться</button></fieldset></form><div class="registration__success"><div class="registration__success-title">Вы успешно зарегистрировались на платформе C-Money!</div><p class="registration__notification">Ссылка для входа в личный кабинет отправлена на вашу электронную почту (не забудьте проверить папку «Спам»)</p></div></div></section><section id="feedback" class="feedback"><div class="container"><h2 class="feedback__title">Отзывы наших клиентов</h2><div class="feedback__swiper"><div class="swiper-button-prev"></div><div class="swiper swiper-container"><div class="swiper-wrapper"><div class="swiper-slide"><img src="img/people/client1.png" alt="Юлия С." class="feedback__image"><p class="feedback__name">Юлия С</p><p class="feedback__comment">«Очень удобная платформа для открытия мультивалютных счётов»</p></div><div class="swiper-slide"><img src="img/people/client2.png" alt="Светлана Н" class="feedback__image"><p class="feedback__name">Светлана Н</p><p class="feedback__comment">«Пользуюсь платформой уже больше года, нравится, что можно быстро менять валюту по выгодному курсу»</p></div><div class="swiper-slide"><img src="img/people/client3.png" alt="Сергей А." class="feedback__image"><p class="feedback__name">Сергей А</p><p class="feedback__comment">«Открыл счёт в биткоинах, могу быстро следить за курсом и делать обмен»</p></div></div></div><div class="swiper-button-next"></div></div></div></section></main><footer class="footer"><div class="container"><div class="footer__wrapper"><a href="/" class="footer__logo"><img src="img/sprite.svg#logo-white" alt="Логотип компании C-Money" width="141" height="38" class="footer__svg"></a><nav class="footer__navigation"><ul class="footer__list"><li class="footer__item"><a href="#banner" class="footer__link">О компании</a></li><li class="footer__item"><a href="#feedback" class="footer__link">Отзывы</a></li><li class="footer__item"><a href="#registration" class="footer__link">Регистрация</a></li><li class="footer__item"><a href="#benefits" class="footer__link">Почему с нами выгодно?</a></li></ul></nav><div class="footer__contacts"><p class="footer__contacts-title">Контакты:</p><address class="footer__address"><a href="tel:+79213474997" class="footer__tel">+7 921 347-49-97</a> <a href="mailto:C-Money@gmail.com" class="footer__mail">C-Money@gmail.com</a><p class="footer__location">г. Москва ул.&nbsp;Новослободская 120/2 54</p><ul class="footer__media"><li class="footer__social"><a href="javascript:void(0)" class="footer__icon-link"><svg width="46" height="46" viewBox="0 0 46 46" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><circle cx="23" cy="23" r="23" fill="white"/><path d="M31.665 14.7169L13.935 21.5539C12.725 22.0399 12.732 22.7149 13.713 23.0159L18.265 24.4359L28.797 17.7909C29.295 17.4879 29.75 17.6509 29.376 17.9829L20.843 25.6839H20.841L20.843 25.6849L20.529 30.3769C20.989 30.3769 21.192 30.1659 21.45 29.9169L23.661 27.7669L28.26 31.1639C29.108 31.6309 29.717 31.3909 29.928 30.3789L32.947 16.1509C33.256 14.9119 32.474 14.3509 31.665 14.7169Z"/></svg></a></li><li class="footer__social"><a href="javascript:void(0)" class="footer__icon-link"><svg width="46" height="46" viewBox="0 0 46 46" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><circle cx="23" cy="23" r="23" fill="white"/><path d="M34.643 15.937C33.808 16.307 32.911 16.557 31.968 16.67C32.941 16.0877 33.669 15.1714 34.016 14.092C33.1019 14.6349 32.1014 15.0172 31.058 15.222C30.3564 14.4728 29.4271 13.9763 28.4143 13.8094C27.4016 13.6426 26.3621 13.8147 25.4572 14.2992C24.5524 14.7837 23.8328 15.5533 23.4102 16.4887C22.9875 17.424 22.8855 18.4727 23.12 19.472C21.2677 19.379 19.4556 18.8975 17.8014 18.0589C16.1472 17.2202 14.6879 16.0431 13.518 14.604C13.118 15.294 12.888 16.094 12.888 16.946C12.8876 17.713 13.0764 18.4682 13.4379 19.1447C13.7993 19.8212 14.3222 20.398 14.96 20.824C14.2203 20.8004 13.4969 20.6005 12.85 20.241V20.301C12.8499 21.3767 13.222 22.4193 13.9032 23.252C14.5843 24.0846 15.5326 24.6559 16.587 24.869C15.9008 25.0547 15.1813 25.082 14.483 24.949C14.7805 25.8746 15.36 26.684 16.1404 27.2639C16.9208 27.8438 17.8629 28.1651 18.835 28.183C17.1848 29.4784 15.1469 30.181 13.049 30.178C12.6774 30.1781 12.3061 30.1564 11.937 30.113C14.0665 31.4821 16.5454 32.2088 19.077 32.206C27.647 32.206 32.332 25.108 32.332 18.952C32.332 18.752 32.327 18.55 32.318 18.35C33.2293 17.6909 34.0159 16.8749 34.641 15.94L34.643 15.937Z"/></svg></a></li></ul></address></div><div id="map" class="footer__map"></div></div><p class="footer__copyright">© C-Money, 2022</p></div></footer></body></html>
+    })
+  </script>
+  <script defer src="https://api-maps.yandex.ru/2.1/?apikey=90f168b9-9002-4a75-ad9b-fadd23f1e34b&lang=ru_RU" type="text/javascript"></script>
+  <script type="module" src="js/index.min.js"></script>
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__container container">
+      <a href="/" class="header__logo">
+        <img src="img/sprite.svg#logo" alt="Логотип компании C-Money" width="139" height="38" class="header__svg">
+      </a>
+
+      <button class="header__menu-button"></button>
+
+      <nav class="header__navigation">
+        <ul class="header__list">
+          <li class="header__item">
+            <a href="#benefits" class="header__link">Почему с нами выгодно?</a>
+          </li>
+          <li class="header__item">
+            <a href="#registration" class="header__link">Регистрация</a>
+          </li>
+          <li class="header__item">
+            <a href="#feedback" class="header__link">Отзывы</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main">
+    <section id="banner" class="banner">
+      <div class="banner__container container">
+        <h1 class="banner__title">Платформа C-Money</h1>
+        <p class="banner__description">
+          Удобная платформа для хранения счётов, перевода валюты и покупки криптовалюты
+        </p>
+        <a href="#registration" class="banner__button button">Зарегистрироваться</a>
+      </div>
+    </section>
+
+    <section id="benefits" class="benefits">
+      <div class="container">
+        <h2 class="benefits__title">Почему с нами выгодно?</h2>
+        <ul class="benefits__list">
+          <li class="benefits__item benefits__item_statistics">
+            <h3 class="benefits__subtitle">Статистика</h3>
+            <p class="benefits__description">
+              можно быстро отследить статистику доходов и расходов
+            </p>
+          </li>
+          <li class="benefits__item benefits__item_security">
+            <h3 class="benefits__subtitle">Надёжность</h3>
+            <p class="benefits__description">
+              с нами ваши счета в безопасности
+            </p>
+          </li>
+          <li class="benefits__item benefits__item_change">
+            <h3 class="benefits__subtitle">Обмен валюты</h3>
+            <p class="benefits__description">
+              обмен валюты по самому выгодному курсу
+            </p>
+          </li>
+          <li class="benefits__item benefits__item_comfort">
+            <h3 class="benefits__subtitle">Удобство</h3>
+            <p class="benefits__description">
+              удобная платформа для отслежки счётов
+            </p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="registration" class="registration">
+      <div class="container">
+        <h2 class="registration__title">Как зарегистрироваться на платформе</h2>
+        <p class="registration__description">Пошагово заполните все поля формы</p>
+
+        <div class="registration__button-group">
+          <button class="registration__button" data-page="1">1</button>
+          <button class="registration__button" data-page="2" disabled>2</button>
+          <button class="registration__button" data-page="3" disabled>3</button>
+        </div>
+
+        <form action="javascript:void(0)" class="registration__form">
+          <fieldset class="registration__fieldset registration__fieldset_active" data-tab="1">
+            <label class="registration__label">
+              <span class="registration__field-title">Имя</span>
+              <input type="text" name="first-name" class="registration__input">
+            </label>
+
+            <label class="registration__label">
+              <span class="registration__field-title">Фамилия</span>
+              <input type="text" name="last-name" class="registration__input">
+            </label>
+
+            <label class="registration__label">
+              <span class="registration__field-title">Отчество</span>
+              <input type="text" name="middle-name" class="registration__input">
+            </label>
+
+            <button type="button" class="registration__next-button button" disabled>Далее</button>
+          </fieldset>
+
+          <fieldset class="registration__fieldset" data-tab="2">
+            <label class="registration__label">
+              <span class="registration__field-title">Телефон</span>
+              <input type="tel" name="phone-number" class="registration__input">
+            </label>
+
+            <label class="registration__label">
+              <span class="registration__field-title">Электронная почта</span>
+              <input type="email" name="email" class="registration__input">
+            </label>
+
+            <button type="button" class="registration__next-button registration__next-button_no-margin button" disabled>Далее</button>
+          </fieldset>
+
+          <fieldset class="registration__fieldset" data-tab="3">
+            <label class="registration__label">
+              <span class="registration__field-title">Придумайте логин</span>
+              <input type="text" name="login" class="registration__input">
+            </label>
+
+            <label class="registration__label">
+              <span class="registration__field-title">Придумайте пароль</span>
+              <input type="password" name="password" class="registration__input">
+            </label>
+
+            <label class="registration__label">
+              <span class="registration__field-title">Повторите пароль</span>
+              <input type="password" name="repeat-password" class="registration__input">
+            </label>
+
+            <button type="submit" class="registration__submit-button button" disabled>Зарегистрироваться</button>
+          </fieldset>
+        </form>
+
+        <div class="registration__success">
+          <div class="registration__success-title">Вы успешно зарегистрировались на платформе C-Money!</div>
+          <p class="registration__notification">
+            Ссылка для входа в личный кабинет отправлена на вашу электронную почту (не забудьте проверить папку «Спам»)
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="feedback" class="feedback">
+      <div class="container">
+        <h2 class="feedback__title">Отзывы наших клиентов</h2>
+
+        <div class="feedback__swiper">
+          <div class="swiper-button-prev"></div>
+          <div class="swiper swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="img/people/client1.png" alt="Юлия С." class="feedback__image">
+                <p class="feedback__name">Юлия С</p>
+                <p class="feedback__comment">
+                  «Очень удобная платформа для открытия мультивалютных счётов»
+                </p>
+              </div>
+
+              <div class="swiper-slide">
+                <img src="img/people/client2.png" alt="Светлана Н" class="feedback__image">
+                <p class="feedback__name">Светлана Н</p>
+                <p class="feedback__comment">
+                  «Пользуюсь платформой уже больше года, нравится, что можно быстро менять валюту по выгодному курсу»
+                </p>
+              </div>
+
+              <div class="swiper-slide">
+                <img src="img/people/client3.png" alt="Сергей А." class="feedback__image">
+                <p class="feedback__name">Сергей А</p>
+                <p class="feedback__comment">
+                  «Открыл счёт в биткоинах, могу быстро следить за курсом и делать обмен»
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__wrapper">
+        <a href="/" class="footer__logo">
+          <img src="img/sprite.svg#logo-white" alt="Логотип компании C-Money" width="141" height="38" class="footer__svg">
+        </a>
+
+        <nav class="footer__navigation">
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a href="#banner" class="footer__link">О компании</a>
+            </li>
+            <li class="footer__item">
+              <a href="#feedback" class="footer__link">Отзывы</a>
+            </li>
+            <li class="footer__item">
+              <a href="#registration" class="footer__link">Регистрация</a>
+            </li>
+            <li class="footer__item">
+              <a href="#benefits" class="footer__link">Почему с нами выгодно?</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="footer__contacts">
+          <p class="footer__contacts-title">Контакты:</p>
+
+          <address class="footer__address">
+            <a href="tel:+79213474997" class="footer__tel">+7 921 347-49-97</a>
+            <a href="mailto:C-Money@gmail.com" class="footer__mail">C-Money@gmail.com</a>
+            <p class="footer__location">
+              г. Москва ул.&nbsp;Новослободская 120/2 54
+            </p>
+
+            <ul class="footer__media">
+              <li class="footer__social">
+                <a href="javascript:void(0)" class="footer__icon-link">
+                  <svg width="46" height="46" viewBox="0 0 46 46" fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="23" cy="23" r="23" fill="white" />
+                    <path
+                      d="M31.665 14.7169L13.935 21.5539C12.725 22.0399 12.732 22.7149 13.713 23.0159L18.265 24.4359L28.797 17.7909C29.295 17.4879 29.75 17.6509 29.376 17.9829L20.843 25.6839H20.841L20.843 25.6849L20.529 30.3769C20.989 30.3769 21.192 30.1659 21.45 29.9169L23.661 27.7669L28.26 31.1639C29.108 31.6309 29.717 31.3909 29.928 30.3789L32.947 16.1509C33.256 14.9119 32.474 14.3509 31.665 14.7169Z" />
+                  </svg>
+                </a>
+              </li>
+
+              <li class="footer__social">
+                <a href="javascript:void(0)" class="footer__icon-link">
+                  <svg width="46" height="46" viewBox="0 0 46 46" fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="23" cy="23" r="23" fill="white" />
+                    <path
+                      d="M34.643 15.937C33.808 16.307 32.911 16.557 31.968 16.67C32.941 16.0877 33.669 15.1714 34.016 14.092C33.1019 14.6349 32.1014 15.0172 31.058 15.222C30.3564 14.4728 29.4271 13.9763 28.4143 13.8094C27.4016 13.6426 26.3621 13.8147 25.4572 14.2992C24.5524 14.7837 23.8328 15.5533 23.4102 16.4887C22.9875 17.424 22.8855 18.4727 23.12 19.472C21.2677 19.379 19.4556 18.8975 17.8014 18.0589C16.1472 17.2202 14.6879 16.0431 13.518 14.604C13.118 15.294 12.888 16.094 12.888 16.946C12.8876 17.713 13.0764 18.4682 13.4379 19.1447C13.7993 19.8212 14.3222 20.398 14.96 20.824C14.2203 20.8004 13.4969 20.6005 12.85 20.241V20.301C12.8499 21.3767 13.222 22.4193 13.9032 23.252C14.5843 24.0846 15.5326 24.6559 16.587 24.869C15.9008 25.0547 15.1813 25.082 14.483 24.949C14.7805 25.8746 15.36 26.684 16.1404 27.2639C16.9208 27.8438 17.8629 28.1651 18.835 28.183C17.1848 29.4784 15.1469 30.181 13.049 30.178C12.6774 30.1781 12.3061 30.1564 11.937 30.113C14.0665 31.4821 16.5454 32.2088 19.077 32.206C27.647 32.206 32.332 25.108 32.332 18.952C32.332 18.752 32.327 18.55 32.318 18.35C33.2293 17.6909 34.0159 16.8749 34.641 15.94L34.643 15.937Z" />
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </address>
+        </div>
+
+        <div id="map" class="footer__map"></div>
+      </div>
+
+      <p class="footer__copyright">
+        © C-Money, 2022
+      </p>
+    </div>
+  </footer>
+</body>
+
+</html>

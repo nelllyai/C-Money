@@ -4848,13 +4848,13 @@ const setPlacemark = map => {
   if (windowWidth >= 728) {
     myPlacemark = new ymaps.Placemark(coordinates, {}, {
       iconLayout: 'default#image',
-      iconImageHref: '/img/location-mark.svg',
+      iconImageHref: '/img/location-mark.png',
       iconImageSize: [52, 52]
     });
   } else {
     myPlacemark = new ymaps.Placemark(coordinates, {}, {
       iconLayout: 'default#image',
-      iconImageHref: '/img/location-mark.svg',
+      iconImageHref: '/img/location-mark.png',
       iconImageSize: [42, 42]
     });
   }
@@ -4870,6 +4870,7 @@ function init() {
   });
   setPlacemark(myMap);
 }
+;
 ;// CONCATENATED MODULE: ./src/js/index.js
 
 
