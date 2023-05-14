@@ -5,9 +5,21 @@ var __webpack_exports__ = {};
 ;// CONCATENATED MODULE: ./src/js/modules/menu.js
 const menuButton = document.querySelector('.header__menu-button');
 const menu = document.querySelector('.header__navigation');
-menuButton.addEventListener('click', () => {
+const overlay = document.querySelector('.overlay');
+const menuLinks = document.querySelectorAll('.header__link');
+const toggleMenu = () => {
   menu.classList.toggle('header__navigation_active');
   menuButton.classList.toggle('header__menu-button_close');
+  overlay.classList.toggle('overlay_active');
+};
+menuButton.addEventListener('click', toggleMenu);
+overlay.addEventListener('click', toggleMenu);
+menuLinks.forEach(link => {
+  link.addEventListener('click', () => {
+    menu.classList.remove('header__navigation_active');
+    menuButton.classList.remove('header__menu-button_close');
+    overlay.classList.remove('overlay_active');
+  });
 });
 ;// CONCATENATED MODULE: ./src/js/modules/form.js
 const form_form = document.querySelector('form');
@@ -4818,26 +4830,31 @@ buttonGroup.addEventListener('click', event => {
 ;// CONCATENATED MODULE: ./src/js/modules/swiper.js
 new Swiper('.swiper', {
   loop: true,
-  speed: 600,
+  speed: 400,
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev'
   },
   breakpoints: {
     320: {
-      slidesPerView: 1
+      spaceBetween: 10,
+      slidesPerView: 1,
+      loopedSlides: 1
     },
     768: {
-      spaceBetween: 21,
-      slidesPerView: 2
+      spaceBetween: 10,
+      slidesPerView: 2,
+      loopedSlides: 2
     },
     1024: {
-      centeredSlides: true,
-      centeredSlidesBounds: true,
-      slidesPerView: 3
+      spaceBetween: -10,
+      slidesPerView: 3,
+      loopedSlides: 3
     },
     1440: {
-      spaceBetween: 30
+      spaceBetween: 30,
+      slidesPerView: 3,
+      loopedSlides: 3
     }
   }
 });
