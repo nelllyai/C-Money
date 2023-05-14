@@ -5,13 +5,13 @@ const setPlacemark = map  => {
   if (windowWidth >= 728) {
     myPlacemark = new ymaps.Placemark(coordinates, {}, {
       iconLayout: 'default#image',
-      iconImageHref: '/img/location-mark.png',
+      iconImageHref: './img/location-mark.png',
       iconImageSize: [52, 52],
     });
   } else {
     myPlacemark = new ymaps.Placemark(coordinates, {}, {
       iconLayout: 'default#image',
-      iconImageHref: '/img/location-mark.png',
+      iconImageHref: './img/location-mark.png',
       iconImageSize: [42, 42],
     });
   }
