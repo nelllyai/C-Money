@@ -1,6 +1,6 @@
 new Swiper('.swiper', {
   loop: true,
-  speed: 600,
+  speed: 400,
 
   navigation: {
     nextEl: '.swiper-button-next',
@@ -9,19 +9,24 @@ new Swiper('.swiper', {
 
   breakpoints: {
     320: {
+      spaceBetween: 10,
       slidesPerView: 1,
+      loopedSlides: 1,
     },
     768: {
-      spaceBetween: 21,
+      spaceBetween: 10,
       slidesPerView: 2,
+      loopedSlides: 2,
     },
     1024: {
-      centeredSlides: true,
-      centeredSlidesBounds: true,
+      spaceBetween: -10,
       slidesPerView: 3,
+      loopedSlides: 3,
     },
     1440: {
       spaceBetween: 30,
+      slidesPerView: 3,
+      loopedSlides: 3,
     }
   }
 });

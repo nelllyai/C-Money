@@ -2,7 +2,7 @@
   padding: 90px 0;
 
   @include laptop {
-    padding-bottom: 40px;
+    padding-bottom: 65px;
   }
 
   @include tablet {
@@ -12,7 +12,7 @@
 
   @include phone {
     padding-top: 60px;
-    padding-bottom: 70px;
+    padding-bottom: 50px;
   }
 
   &__title {
@@ -37,11 +37,11 @@
     }
 
     @include tablet {
-      padding: 0;
+      padding: 0 20px;
     }
 
     @include phone {
-      padding: 0 49px;
+      padding: 0 50px;
     }
   }
 
